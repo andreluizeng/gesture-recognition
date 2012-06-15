@@ -3,7 +3,6 @@ INSTALATION:
 
 Copy the content in /bin folder to your rootfs folder, make sure to have opencv, gstreamer and gtk installed.
 
-
 CROSS-COMPILING:
 ------------
 
@@ -27,6 +26,22 @@ MORE INFORMATION
 ----------------
 
 www.imxcv.blogspot.com
+
+
+TROUBLESHOTS
+------------
+
+1 - make sure to have the gpu driver correctly installed before running the application (if it was not installed as built-in, you can lsmod it) to avoid segmentation fault.
+2 - the capture resolution must be 320x240, in OpenCV-1.1.0 the cvSetCaptureProperty () function is not working properly so it must be hardcoded in OpenCV source.
+
+HARDCODING CAPTURE RESOLUTION
+-----------------------------
+
+1 - (kwrite/gedit/vi) .../opencv-1.1.0/otherlibs/highgui/cvcap_v4l.cpp
+2 - change line 231 from 640 to 320
+3 - change line 232 from 480 to 240
+4 - rebuild opencv
+5 - resintall opencv
 
 
 AUTHOR:
