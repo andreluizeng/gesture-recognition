@@ -1,0 +1,43 @@
+INSTALATION:
+------------
+
+Copy the content in /bin folder to your rootfs folder, make sure to have opencv, gstreamer and gtk installed.
+
+
+CROSS-COMPILING:
+------------
+
+1 - get into ltib shell: ./ltib -m shell
+2 - make
+3 - the binary is placed in /bin folder
+
+
+THE DEMO:
+------------
+
+This demo is currently working with 2 gestures, opened hand that enables control and closed hand  that disables control.
+If you want to modify the code and use more gestures, it can recognize up to 5 gestures, as shown: http://www.youtube.com/watch?v=quKW-H56kNk
+
+the video of this demo running: http://www.youtube.com/watch?v=p-uxVBOIXEI
+
+
+MORE INFORMATION
+----------------
+
+www.imxcv.blogspot.com
+
+
+AUTHOR:
+--------
+
+Andre Silva
+andreluizeng@yahoo.com.br
+andre.silva@freescale.com
+
+
+
+
+
+
+
+
